@@ -12,27 +12,49 @@
 
 # Q4. In what all domains can we use Python?
 
-# Q5. What are variable and how can we declare them?
+# # Q5. What are variable and how can we declare them?
+# Ans: Variable is like a container which is used to hold data/values of different types. In python to create variable we do not
+# # require to declare type of variable. When we assign any value to it pyhton will autometically determine the type of it.
+# eg: int_var = 103
+#     str_var = "Sample"
 
 # Q6. How can we take an input from the user in Python?
+# Ans: To take input from the user we need to use input function.
+# eg: name = input("Please enter your name :")
 
 # Q7. What is the default datatype of the value that has been taken as an input using input() function?
+# Ans: string is the default datatype for the input function.
 
 # Q8. What is type casting?
+# ans: type casting is a process of converting one datatype to another based on requirement.
+# eg: age = int(input("Enter your age :"))
 
-# Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+# # Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+# Ans: we can take multiple input from the users using split method. If we dont specify separator type then by default space is 
+# consider as separator
+# name,job = input().split(',')
+# print(name)
+# print(job)
 
 # Q10. What are keywords?
+# ans:Python keywords are special reserved words that have specific meanings and purposes and can’t be used for anything but those 
+# specific purposes. 
 
 # Q11. Can we use keywords as a variable? Support your answer with reason.
 
-# Q12. What is indentation? What's the use of indentaion in Python?
+# # Q12. What is indentation? What's the use of indentaion in Python?
+# Ans: Indentation is a process to define a scope of a block of a code. In other programming language normally {} is used to define
+# scope of a section of a code but in python we need to use indentaion or 1 tab space to declare scope of the code.
+
 
 #*** Q13. How can we throw some output in Python?
 
 # Q14. What are operators in Python?
 
 # Q15. What is difference between / and // operators?
+# # ans: / is float division operator and // is integer division operator.
+# print(10/3) #output  3.3333333333333335
+# print(10//3)#output  3
 
 # Q16. Write a code that gives following as an output.
 # ```
@@ -51,25 +73,35 @@
 #     print("THe number is odd")
 
 # Q18. What are boolean operator?
+# ans: Boolean operator return results either in true or false. and, or, not are 3 boolean operators in python
 
 # Q19. What will the output of the following?
 # ```
-# 1 or 0
-
-# 0 and 0
-
-# True and False and True
-
-# 1 or 0 or 0
+# Ans: 
+# 1 or 0 = 1
+# 0 and 0 = 0
+# True and False and True = False
+# 1 or 0 or 0 = 1
 # ```
 
-# Q20. What are conditional statements in Python?
+# # Q20. What are conditional statements in Python?
+# Ans: conditional statements used to run a specific block of code when it satisfy a certain condition. For this we use 1f , elif and
+# else 
 
 # Q21. What is use of 'if', 'elif' and 'else' keywords?
+# ans: if we have multiple conditions then we first start the conditions with 'if' statement then for following condtions we use
+# elif statement and for all the conditions other than if and elif we use else statement.
+
 
 # Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+# age = int(input("Enter your age: "))
+# if age >= 18 : 
+#     print("I can vote")
+# else:
+#     print("I can't vote")
 
-# Q23. Write a code that displays the sum of all the even numbers from the given list.
+
+# # Q23. Write a code that displays the sum of all the even numbers from the given list.
 # ```
 # numbers = [12, 75, 150, 180, 145, 525, 50]
 # ```
@@ -83,39 +115,48 @@
 
 
 # # Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
-
 # Ans:
-
-# num1,num2,num3 = input("Enter 3 numbers : ").split()
+# no_1,no_2,no_3 = map(int13 14 1, input("Enter 3 no :").split())
 # large = 0
-# if num1>num2:
-#     large=num1
-# elif num2>num3:
-#     large=num2
+# if no_1>no_2 : 
+#     if no_1 > no_3:
+#         large = no_1
+#     else:
+#         large = no_3
+# elif no_2 > no_3:
+#     large = no_2
 # else:
-#     large = num3
-# print("Largest no is : ",large)
-
+#     large = no_3
+# print("Largest no is :",large)
 
 
 # Q25. Write a program to display only those numbers from a list that satisfy the following conditions
-
 # - The number must be divisible by five
-
 # - If the number is greater than 150, then skip it and move to the next number
-
 # - If the number is greater than 500, then stop the loop
 # ```
 # numbers = [12, 75, 150, 180, 145, 525, 50]
 # ```
+# Ans:
+# numbers = [12, 75, 150, 180, 145, 525, 50]
+# for i in numbers:
+#     if i % 5 == 0:
+#         if i > 500 :
+#             break
+#         if i > 150:
+#             continue
+#         print(i)
+
+
 
 # Q26. What is a string? How can we declare string in Python?
+# Ans:
+#  Strings are arrays of bytes representing Unicode characters.
+#  eg: str1 = "Python"
 
 # Q27. How can we access the string using its index?
-
 # Ans:
 # We can access string folloing ways: 1> string[index_no] 2>using for loop
-
 # st1= "Python"
 # print(st1[1])
 # for i in st1:
@@ -159,18 +200,19 @@
 # print("'iNeuron's Big Data Course'")
 
 # Q34. What is a list in Python?
-# Ans: List is a collection data type which is used to store multiple data either of same type or different types
+# Ans: List is a mutable collection data type which is used to store multiple data either of same type or different types
 
 # Q35. How can you create a list in Python?
 # ans: We can create list either by [] or using list function. Below are the examples
 # list1 = [1,2,"Python",4]
 # print(list1)
-
 # tup1=(5,6,"Program",10)
 # list2 = list(tup1)
 # print(list2)
 
 # Q36. How can we access the elements in a list?
+# ans: 
+# we can access elements of a list either by index or for loop
 
 
 # Q37. Write a code to access the word "iNeuron" from the given list.
@@ -182,6 +224,10 @@
 # print(lst[4][2])
 
 # Q38. Take a list as an input from the user and find the length of the list.
+# # Ans: 
+# inputed_list = input("Please enter some item followed by space to create a list :").split()
+# print(len(inputed_list))
+
 
 # Q39. Add the word "Big" in the 3rd index of the given list.
 # ```
@@ -194,34 +240,83 @@
 
 
 # Q40. What is a tuple? How is it different from list?
+# Ans:  Tuple is a collection datatype that can store multiple values of either same of different types in a single variable.
+# () is used to create tuple variable. It is ordered and immutable where is list is immutable
+# # eg: 
+# tup1 = ("Ram", "Shayam",50,[40,9,"School"]) 
+# print(tup1[3][2])#accessing tuple elements
+
 
 # Q41. How can you create a tuple in Python?
+# ans: We can create a tuple in the folloing way
+# stuple1 = (1, 3, 4, 'test', 'red')
 
 # Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
+# Ans: We cannot add any element in tuple as tuple is immutable. 
+# to add element in tuple first change it to list and add the require elements and change it back to tuple
+
 
 # Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
+# tup1 = ("Ram", "Shayam",50,[40,9,"School"]) 
+# stuple1 = (1, 3, 4, 'test', 'red')
+# appended_tup = tup1 + stuple1
+# print(appended_tup)
+# print(sum((tup1,stuple1),()))
 
-# Q44. Take a tuple as an input and print the count of elements in it.
+
+# # Q44. Take a tuple as an input and print the count of elements in it.
+# Ans:inputed_tuple = tuple(input("Please enter some item followed by space to create a tuple :").split())
+# print(len(inputed_tuple))
 
 # Q45. What are sets in Python?
+# Ans:  Set is collection data type which hold unordered, unindexed, unchangable, distinct values. 
 
 # Q46. How can you create a set?
+
 
 # Q47. Create a set and add "iNeuron" in your set.
 
 # Q48. Try to add multiple values using add() function.
+# Ans: we cannot add multiple values using add() in set. add() is used to add only 1 element in the set. 
 
 # Q49. How is update() different from add()?
+# Ans: If we have 1 element to add in the set for that purpose we can use add() method. If we have some iterable like list, tuple,
+# dictionary, set etc then in that senario we need to use update method().
+
 
 # Q50. What is clear() in sets?
+# Ans: It will remove all items from the set and create an empty set. 
 
 # Q51. What is frozen set?
+# ans: Frozen set is just an immutable version of a Python set object. While elements of a set can be modified at any time, 
+# elements of the frozen set remain the same after creation.
+# # eg:
+# numbers2 = [1,2,3,4,5,7,8,9]
+# frozen_set2 =frozenset(numbers2)
+
 
 # Q52. How is frozen set different from set?
+# ans: There are no methods like add,update, remove for frozenset like set
 
 # Q53. What is union() in sets? Explain via code.
+# Ans: if we have multiple sets union will merge those sets with the distinct values in those sets. 
+# set1 = {1,2,3,4}
+# set2 = {2,3,6,7}
+# set3 = {11,2,6,12}
+# set5=set1.union(set2).union(set3)
+# print(set5)
+# set4 = set1|set2|set3
+# print(set4)
 
 # Q54. What is intersection() in sets? Explain via code.
+# Ans: if we have multiple sets intersection will merge those sets with the common values in those set. 
+# set1 = {1,2,3,4}
+# set2 = {2,3,6,7}
+# set3 = {11,2,6,3,12}
+# set4 = set1 & set2 & set3
+# print(set4)
+# set5 = set1.intersection(set2).intersection(set3)
+# print(set5)
 
 # Q55. What is dictionary ibn Python?
 # Ans: Dictionary is a collection data type, which hold value in  the form of key value pair and uses {}.
@@ -256,6 +351,7 @@
 # dict_1['new_key']= 'New Value'
 
 # Q60. Create a dictionary and access all the values in that dictionary.
+# ans: 
 # cars = {
 #             "Model":"Tata",
 #             "Model_year": "2022",
@@ -281,32 +377,93 @@
 # Q67. What is the use of values() function?
 
 # Q68. What are loops in Python?
+# Ans: If any task is required to be done multiple repeatative times then in that senario we use loop.
 
 # Q69. How many type of loop are there in Python?
+# Ans: In python there are 2 types of loops 1. for loop 2. while loop
 
 # Q70. What is the difference between for and while loops?
+# ans: for loop is suitable if we know exactly how many times a loop is going to execute. Whereas if we are not sure about no of
+# times the loop will run in that senario while loop can be used. Then the while loop keeps on running until the given condition 
+# is met.
 
 # Q71. What is the use of continue statement?
+# Ans: During looping if the program comes accross continue statement it will simply skip rest of code within the scope and check for 
+# next item in the loop.
 
 # Q72. What is the use of break statement?
+# Ans: During looping if the program comes accross break statement it will simply stop the loop there and come out of the scope to
+# run next line of code outside of the loop.
 
 # Q73. What is the use of pass statement?
+# Ans: After any condition or funtion declaration if the content of that section is empty then we can use pass statement to avoid 
+# error reporting by the function
 
-# Q74. What is the use of range() function?
+# # Q74. What is the use of range() function?
+# Ans: A range function creates a sequence of numbers starting from 0 by default till n-1. If interval not mentioned explicitly then
+# it will increment by 1
 
 # Q75. How can you loop over a dictionary?
+# Ans: we can loop throught items using for loop.
+# eg:
+# dict1 = {"Name":"Abhi", "Roll":"SPE","Company":"xyz"}
+# for k,v in dict1.items():
+#     print(k,v)
 
 
 # ### Coding problems
 # Q76. Write a Python program to find the factorial of a given number.
+# Ans:
+# user_input = int(input("Enter a no : "))
+# fact = 1
+# for i in range(1,user_input+1):
+#     fact = fact*i
+# print(f"Factorial of {user_input} is",fact)
+
 
 # Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (P*R*T)/100
+# Ans:
+# principal = float(input("Enter Pricipal :"))
+# rate = float(input("Enter Rate :"))
+# time = float(input("Enter Time :"))
+# simple_interest = (principal*rate*time)/100
+# print("Interest is ",simple_interest)
+
 
 # Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
+# Ans:
+
 
 # Q79. Write a Python program to check if a number is prime or not.
+# Ans:
+# inputed_no = int(input("Please enter a no: "))
+# count = 0
+
+# for i in range(1,inputed_no+1):
+#     if i == 1 or i == inputed_no:
+#         continue
+#     elif inputed_no % i==0:
+#         count = count + 1
+
+# if count > 0:
+#     print("Not Prime")
+# else:
+#     print("Prime No")
+
 
 # Q80. Write a Python program to check Armstrong Number.
+# Ans:
+# inputed_no = input("Please enter a no: ")
+# arm = 0
+# for i in inputed_no:
+#     i_no = int(i)
+#     arm = arm + (i_no*i_no*i_no)
+
+# if arm == int(inputed_no):
+#     print("Armstrong Number")
+# else:
+#     print("Not Armstrong Number")
+    
 
 # Q81. Write a Python program to find the n-th Fibonacci Number.
 
@@ -335,6 +492,9 @@
 # Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 # Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
 # ```
+# Ans:
+
+
 
 # Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
 # ```
@@ -346,13 +506,32 @@
 # ```
 # Input : test_tuple1 = (7, 2), test_tuple2 = (7, 8)
 # Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
-# ```
+# Ans: ```
+# test_tuple1 = (7, 2)
+# test_tuple2 = (7, 8)
+# list1=[]
+# for i in test_tuple1:
+#     for j in test_tuple2:
+#         tup=(i,j)
+#         list1.append(tup)
+# 
+# for i in test_tuple2:
+#     for j in test_tuple1:
+#         tup=(i,j)
+#         list1.append(tup) 
+# 
+# print(list1)
+
 
 # Q95. Write a Python program to sort a list of tuples by second item.
 # ```
 # Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
 # Output : [('Geeks', 8), ('for', 24), ('Geeks', 30)]
 # ```
+# ans:
+# list1 = [('for', 24), ('Geeks', 8), ('Geeks', 30)]
+# list1.sort(key=lambda x:x[1])
+# print(list1)
 
 # Q96. Write a python program to print below pattern.
 # ```
@@ -362,6 +541,11 @@
 # * * * * 
 # * * * * * 
 # ```
+# Ans:
+# for i in range(1,6):
+#     print('* '*i)
+
+
 # Q97. Write a python program to print below pattern.
 # ```
 #     *
@@ -387,7 +571,13 @@
 # 1 2 3 
 # 1 2 3 4 
 # 1 2 3 4 5
+# Ans:
 # ```
+# for i in range(1,6):
+#     for j in range(1,i+1):
+#         print(j,end=" ")
+#     print("\n")
+
 
 # Q100. Write a python program to print below pattern.
 # ```
